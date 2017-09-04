@@ -39,7 +39,7 @@ return [
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'PRC',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -144,7 +144,8 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
-
+        ##支付宝支付
+        'Latrell\Alipay\AlipayServiceProvider',
 	],
 
 	/*
@@ -194,5 +195,6 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
 
 	],
+
 
 ];
